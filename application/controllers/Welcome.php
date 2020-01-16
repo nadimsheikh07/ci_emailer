@@ -43,8 +43,8 @@ class Welcome extends CI_Controller {
         $this->email->from('nadim.sheikh.07@gmail.com', 'nadim');
         $this->email->to('nadim.sheikh.07@gmail.com');
 
-        $this->email->subject('Email Test');
-        $this->email->message('Testing the email class.');
+        $this->email->subject('Email Test ci_emailer');
+        $this->email->message('Testing the email class ci_emailer.');
 
         if (!$this->email->send()):
             show_error($this->email->print_debugger());
